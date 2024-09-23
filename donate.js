@@ -5,23 +5,31 @@ document.getElementById('blogbtn').addEventListener('click',function(){
 document.getElementById('donate-div-btn').addEventListener('click',function(){
     const donateDiv = document.getElementById('donate-div');
     const historyDiv = document.getElementById('history-div');
+    const donateBtn = document.getElementById('donate-div-btn');
     
     donateDiv.classList.remove('hidden');
     historyDiv.classList.add('hidden');
 
-    document.getElementById('history-div-btn').add('bg-lime-300');
-    document.getElementById('donate-div-btn').classList.remove('bg-lime-300');
+    if (!donateBtn.classList.contains('bg-lime-300')) {
+        donateBtn.classList.add('bg-lime-300');
+    }
+
+    document.getElementById('history-div-btn').classList.remove('bg-lime-300');
 });
 
 document.getElementById('history-div-btn').addEventListener('click',function(){
     const donateDiv = document.getElementById('donate-div');
     const historyDiv = document.getElementById('history-div');
+    const historyDivBtn = document.getElementById('history-div-btn');
     
     donateDiv.classList.add('hidden');
     historyDiv.classList.remove('hidden');
 
-    document.getElementById('donate-div-btn').add('bg-lime-300');
-    document.getElementById('history-div-btn').classList.remove('bg-lime-300');
+    if (!historyDivBtn.classList.contains('bg-lime-300')) {
+        historyDivBtn.classList.add('bg-lime-300');
+    }
+    
+    document.getElementById('donate-div-btn').classList.remove('bg-lime-300');
 });
 
 document.getElementById('noakhali-donate').addEventListener('click', function(e) {
