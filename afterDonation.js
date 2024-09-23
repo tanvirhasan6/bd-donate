@@ -7,7 +7,7 @@ function donationCalculation(donationId,donatedId){
     const donationAmt = document.getElementById(donationId).value;
     const donatedAmt = parseFloat(document.getElementById(donatedId).innerHTML);
 
-    if(isNaN(donationAmt)){
+    if(isNaN(donationAmt) || !donationAmt){
         alert('Caution!! Inputed value is not a number!');
     }else if(parseFloat(donationAmt)<=0){
         alert('Sorry, Your amount is too low!');
@@ -38,8 +38,8 @@ function donationCalculation(donationId,donatedId){
         parentDiv.appendChild(historydiv);
         
 
-        // const modal = document.getElementById('donate-modal');
-        // modal.showModal(); 
+        const modal = document.getElementById('donate-modal');
+        modal.showModal(); 
     }
     
     
