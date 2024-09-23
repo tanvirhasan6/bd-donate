@@ -14,29 +14,18 @@ document.getElementById('history-div-btn').addEventListener('click',function(){
     historyDiv.classList.remove('hidden');
 });
 
-document.getElementById('feni-donate').addEventListener('click', function(e) {
-    e.preventDefault();
-
-    const donation = document.getElementById
-    const modal = document.getElementById('donate-modal');
-    modal.showModal(); // Show the modal when button is clicked
-    alert('ok');
-    donationCalculation();
+document.getElementById('noakhali-donate').addEventListener('click', function(e) {
+    e.preventDefault(); 
+    donationCalculation('noakhali-amount','noakhali-donation');
 });
 
-document.getElementById('noakhali-donate').addEventListener('click', function(e) {
-    e.preventDefault(); // Prevent the default form submission
-    const modal = document.getElementById('donate-modal');
-    modal.showModal(); // Show the modal when button is clicked
+document.getElementById('feni-donate').addEventListener('click', function(e) {
+    e.preventDefault();
+    donationCalculation('feni-amount','feni-donation');
 });
 
 document.getElementById('quota-donate').addEventListener('click', function(e) {
-    e.preventDefault(); // Prevent the default form submission
-    const modal = document.getElementById('donate-modal');
-    modal.showModal(); // Show the modal when button is clicked
+    e.preventDefault(); 
+    donationCalculation('quota-amount','quota-donation');
 });
 
-function donationCalculation(){
-    const balance = parseInt(document.getElementById('balance').innerHTML);
-    alert(new Date());
-}
