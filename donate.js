@@ -1,8 +1,4 @@
-// document.getElementById('blogbtn').addEventListener('click',function(){
-//     window.location.href = 'blog.html';
-// });
-
-document.getElementById('homebtn').addEventListener('click',function(){
+document.getElementById('blogbtn').addEventListener('click',function(){
     window.location.href = 'blog.html';
 });
 
