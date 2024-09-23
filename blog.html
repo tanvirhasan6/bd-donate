@@ -26,7 +26,55 @@
       </script>
       
 </head>
-<body>
+<body class="flex flex-col justify-center items-center font-laxend">
+  <header class="sticky top-0 flex flex-col justify-center items-center w-full bg-white bg-opacity-50 backdrop-blur-md backdrop-filter">
+
+    <div class="navbar bg-yellow-50 px-20 py-5 mb-10">
+        <div class="navbar-start">
+          <form action="index.html">
+            <button class="btn bg-lime-300 text-xl px-8 font-bold" id="homebtn">Home</button>
+          </form>
+        </div>
+        <div class="navbar-center">
+          <img src="assets/logo.png" alt="logo">
+          <p class="text-xl font-bold ml-4">Donate Bangladesh</p>
+        </div>
+        <div class="navbar-end">
+          <img src="assets/coin.png" alt="coin">
+          <p class="ml-2 text-xl font-bold text-gray-500">
+            <span id="balance">8000</span> BDT
+          </p>
+        </div>
+    </div>
+
+  </header>
+
+  <main class="flex flex-col justify-center items-center lg:w-10/12 w-full mt-5 gap-10 min-h-screen">
+
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" checked="checked" />
+      <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+      <div class="collapse-content">
+        <p>hello</p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+      <div class="collapse-content">
+        <p>hello</p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+      <div class="collapse-content">
+        <p>hello</p>
+      </div>
+    </div>
+
+  </main>
+  <script type="text/javascript" src="donate.js"></script>
     
 </body>
 </html>
