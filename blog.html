@@ -27,9 +27,9 @@
       
 </head>
 <body class="flex flex-col justify-center items-center font-laxend">
-  <header class="sticky top-0 flex flex-col justify-center items-center w-full bg-white bg-opacity-50 backdrop-blur-md backdrop-filter">
+  <header class="sticky top-0 flex flex-col justify-center items-center w-full bg-white bg-opacity-50 backdrop-blur-md backdrop-filter border-b border-gray-200">
 
-    <div class="navbar bg-yellow-50 px-20 py-5 mb-10">
+    <div class="navbar px-20 py-5 mb-10">
         <div class="navbar-start">
           <button class="btn bg-lime-300 text-xl px-8 font-bold" id="homebtn">Home</button>          
         </div>
@@ -50,24 +50,44 @@
   <main class="flex flex-col justify-center items-center lg:w-10/12 w-full mt-5 gap-10 min-h-screen">
 
     <div class="collapse collapse-arrow bg-base-200">
-      <input type="radio" name="my-accordion-2" checked="checked" />
-      <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+      <input type="radio" name="my-accordion" checked="checked" />
+      <div class="collapse-title text-xl font-medium">What is Document Object Model (DOM)?</div>
       <div class="collapse-content">
-        <p>hello</p>
+        <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content.</p>
       </div>
     </div>
     <div class="collapse collapse-arrow bg-base-200">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+      <input type="radio" name="my-accordion" />
+      <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
       <div class="collapse-content">
-        <p>hello</p>
+        <p>Using getElementById: The getElementById method allows you to select an element by its ID.</p>
+        <p>Using querySelector: The querySelector method allows you to select the first element that matches a specified CSS selector(s) in the document.</p>
       </div>
     </div>
     <div class="collapse collapse-arrow bg-base-200">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+      <input type="radio" name="my-accordion" />
+      <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM and why is it useful?</div>
       <div class="collapse-content">
-        <p>hello</p>
+        <p>Event delegation is a design pattern in JavaScript used to efficiently manage and handle events on multiple child elements by attaching a single event listener to a common ancestor element. This pattern is particularly valuable in scenarios where you have a large number of similar elements, such as list items, and want to optimize event handling.</p>
+
+        <p>Benefits of event delegation:
+          Efficiency: Event delegation reduces the number of event listeners, improving memory usage and performance, especially when dealing with a large number of elements.
+          Dynamic elements: It works seamlessly with dynamically added or removed child elements, as the common ancestor continues to listen for events on them.</p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion" />
+      <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+      <div class="collapse-content">
+        <p>The following are the most common and practical ways you might want to manipulate the Element object:
+
+          Change the Content of an Element
+          Manipulate the Class Attribute
+          Setting CSS Styles Using JavaScript
+          Create, Add, and Remove Elements
+          Insert Element at a Specific Position
+          Manipulating Element Attributes
+          Manipulating Data Attributes</p>
       </div>
     </div>
 

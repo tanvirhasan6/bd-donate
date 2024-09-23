@@ -34,16 +34,16 @@ document.getElementById('history-div-btn').addEventListener('click',function(){
 
 document.getElementById('noakhali-donate').addEventListener('click', function(e) {
     e.preventDefault(); 
-    donationCalculation('noakhali-amount','noakhali-donation');
+    donationCalculation('noakhali-amount','noakhali-donation','noakhali-h');
 });
 
 document.getElementById('feni-donate').addEventListener('click', function(e) {
     e.preventDefault();
-    donationCalculation('feni-amount','feni-donation');
+    donationCalculation('feni-amount','feni-donation','feni-h');
 });
 
 document.getElementById('quota-donate').addEventListener('click', function(e) {
     e.preventDefault(); 
-    donationCalculation('quota-amount','quota-donation');
+    donationCalculation('quota-amount','quota-donation','quota-h');
 });
 
