@@ -26,7 +26,7 @@ function donationCalculation(donationId,donatedId,donationHeadID){
 
         const newP = document.createElement('p');
         newP.className = 'text-sm font-bold mb-5';
-        newP.textContent = donatedAmt + ' Tk. Donated for ' + donationTxt;
+        newP.textContent = parseFloat(donationAmt) + ' Tk. Donated for ' + donationTxt;
 
         const dateP = document.createElement('p');
         dateP.className = 'text-sm ml-2';
